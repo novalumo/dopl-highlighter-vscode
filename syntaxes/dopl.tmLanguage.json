@@ -1,0 +1,49 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "dopl",
+  "patterns": [
+    {
+      "name": "comment.line",
+      "match": "^# [^\\n]*$"
+    },
+    {
+      "patterns": [
+        {
+          "match": "(\\S+)\\s(\\S+)\\s([\\s\\S]+)",
+          "captures": {
+            "1": { "patterns": [{ "include": "#key" }] },
+            "2": { "patterns": [{ "include": "#operator" }] },
+            "3": { "patterns": [{ "include": "#value" }] }
+          }
+        }
+      ],
+      "repository": {
+        "key": {
+          "patterns": [
+            {
+              "name": "support.variable",
+              "match": "\\S+"
+            }
+          ]
+        },
+        "operator": {
+          "patterns": [
+            {
+              "name": "keyword.control",
+              "match": "\\->"
+            }
+          ]
+        },
+        "value": {
+          "patterns": [
+            {
+              "name": "string.quoted",
+              "match": "[\\s\\S]+"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "scopeName": "source.dopl"
+}
