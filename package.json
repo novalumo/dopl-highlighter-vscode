@@ -29,6 +29,12 @@
         "scopeName": "source.dopl",
         "path": "./syntaxes/dopl.tmLanguage.json"
       }
+    ],
+    "snippets": [
+      {
+        "language": "dopl",
+        "path": "./snippet/dopl.snippet.json"
+      }
     ]
   }
 }
