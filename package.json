@@ -3,6 +3,7 @@
   "displayName": "DOPL Syntax Highlight",
   "description": "Syntax highlighting support for DOPL - Document-oriented Paired-value Language",
   "version": "0.0.1",
+  "publisher": "Novalumo",
   "engines": {
     "vscode": "^1.70.0"
   },

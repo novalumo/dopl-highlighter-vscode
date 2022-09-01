@@ -2,6 +2,14 @@
 
 ## Installation
 
+### Windows
+
 ```powershell
 .\install.ps1
+```
+
+### macOS / Linux
+
+```bash
+./install.sh
 ```
